@@ -1,0 +1,10 @@
+{
+  "email": "abhinaykavetikrishna@gmail.com",
+  "password": "Saisunny@9",
+  "email1": "abhinaykavetikrishna@gmail.com",
+  "password1":"Saisunny@19945",
+  "validEmail": "admin@yourstore.com",
+  "validPassword": "adminadmin",
+  "invalidEmail": "admin123@yourstore.com",
+  "invalidPassword": "adminadmin123"
+}

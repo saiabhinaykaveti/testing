@@ -1,0 +1,15 @@
+describe('when user mouseover on how it works as',function(){
+    it('navigate to the benfits of home tutor',function(){
+        cy.visit('https://hometutor.sethu-ai.com')
+        cy.contains('How It Works').trigger('mouseover')
+        cy.wait(2000)
+        cy.contains('Benifits of Home Tutor').invoke('show').should('be.visible').click()
+        cy.contains('How It Works').trigger('mouseover')
+        cy.wait(2000)
+        cy.contains('Certifications').invoke('show').should('be.visible').click()
+        cy.contains('How It Works').trigger('mouseover')
+        cy.wait(2000)
+        cy.contains('Become a Home Tutor').parents('.position-relative').invoke('show')
+        cy.contains('Become a Home Tutor').click({ force: true })
+    })
+})
