@@ -48,10 +48,10 @@ Cypress.Commands.add('clicklink',(label)=>{
     cy.get('a').contains(label).click()
 })
 
-Cypress.Commands.add('adloginwithauth',(adminusername,apwd)=>{
+Cypress.Commands.add('adloginwithauth',(ausername,apwd)=>{
     cy.visit('http://abhinaykaveti-001-site1.ltempurl.com/login?ReturnUrl=%2Fadmin',{
         auth:{
-            username:adminusername,
+            username:ausername,
             password:apwd
         }
        
